@@ -1,1 +1,649 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    font-family: "Inter", sans-serif;
+}
+
+button {
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+}
+
+.text {
+    color: rgba(255, 255, 255, 0.50);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.30px;
+}
+
+.container {
+    max-width: 1060px;
+    margin: 0 auto;
+}
+
+.banner {
+    background: linear-gradient(180deg, #000000 0%, #1a1a1a 30%, #1a1a1a 50%, #1a1a1a 70%, #000000 100%);
+    padding-top: 57px;
+    padding-bottom: 76px;
+}
+
+/* Navbar */
+.banner .nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.banner .title {
+    color: #E6533C;
+    font-size: 36px;
+    font-style: italic;
+    font-weight: 800;
+    line-height: 43.2px;
+    word-wrap: break-word;
+}
+
+.banner .nav {
+    padding: 4px;
+    border-radius: 39px;
+    border: 1px solid rgba(255, 255, 255, 0.10);
+    display: flex;
+    align-items: center;
+    gap: 47px;
+}
+
+.banner .home-button {
+    padding: 8px 20px;
+    background: #E6533C;
+    border-radius: 46px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner .home-button {
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    word-wrap: break-word;
+}
+
+.banner .nav-item {
+    color: white;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21.6px;
+    word-wrap: break-word;
+}
+
+.banner .nav-about {
+    padding-left: 20px;
+    padding-right: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner .nav-about {
+    color: white;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21.6px;
+    word-wrap: break-word;
+}
+
+/* Banner content */
+.banner-content {
+    display: flex;
+    align-items: center;
+    gap: 200px;
+    margin-top: 32px;
+}
+
+/* Banner Left */
+.banner-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 28px;
+}
+
+.banner-left .banner-title {
+    align-self: stretch;
+    font-size: 78px;
+    line-height: 93.6px;
+    word-wrap: break-word;
+}
+
+.banner-left .bold-text {
+    color: white;
+    font-family: 'Inter', sans-serif;
+    font-weight: 900;
+}
+
+.banner-left .cursive-text {
+    color: white;
+    font-family: 'Dancing Script', cursive;
+    font-weight: 400;
+}
+
+.banner-left .banner-description {
+    align-self: stretch;
+    color: rgba(255, 255, 255, 0.50);
+    font-size: 16px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.50px;
+    word-wrap: break-word;
+}
+
+.banner-left .buttons {
+    display: inline-flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 14px;
+}
+
+.banner-left .button {
+    padding: 16px 40px;
+    border-radius: 42px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 10px;
+    border: none;
+    outline: none;
+}
+
+.banner-left .join-club {
+    background: #E6533C;
+}
+
+.banner-left .join-club {
+    color: white;
+    font-size: 18px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    line-height: 22px;
+}
+
+.banner-left .download-app {
+    border: 1px solid white;
+}
+
+.banner-left .download-app {
+    background: transparent;
+    color: white;
+    font-size: 18px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    line-height: 22px;
+}
+
+/* Banner right */
+.banner-right {
+    position: relative;
+}
+
+.banner-right .banner-img {
+    width: 349px;
+    height: 580px;
+}
+
+.banner-right .banner-polygon {
+    position: absolute;
+    top: 50%;
+    left: -70px;
+}
+
+.banner-card {
+    width: 206px;
+    height: 96px;
+    background: rgba(48, 48, 48, 0.54);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.10);
+    backdrop-filter: blur(20px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    position: absolute;
+    left: -120px;
+    bottom: 80px;
+}
+
+.banner-card-circle {
+    width: 40px;
+    height: 40px;
+    background: #E6533C;
+    border-radius: 100%;
+}
+
+.banner-card-star {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.banner-card-star .count {
+    color: #FAFAF9;
+    font-size: 24px;
+    font-family: Inter;
+    font-weight: 900;
+    line-height: 24px;
+    letter-spacing: 0.30px;
+    word-wrap: break-word
+}
+
+.banner-card-star .title {
+    color: rgba(239, 237, 232, 0.65);
+    font-size: 16px;
+    font-family: Inter;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.50px;
+    word-wrap: break-word
+}
+
+.banner-card-2 {
+    width: 180px;
+    top: 130px;
+    left: auto;
+    right: -40px;
+}
+
+.banner-card-2 .banner-card-star {
+    gap: 4px;
+}
+
+.banner-card-2 .count {
+    font-size: 40px;
+    line-height: 40px;
+}
+
+.banner-card-2 .title {
+    font-size: 13px;
+    line-height: 20px;
+}
+
+/* Change your habits */
+.change-your-habits {
+    background: #000000;
+    padding-bottom: 100px;
+}
+
+.change-your-habits h2 {
+    color: white;
+    font-size: 48px;
+    font-weight: 900;
+    line-height: 57.60px;
+    text-align: center;
+}
+
+.change-your-habits p.description {
+    width: 671px;
+    margin: auto;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.50);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.30px;
+    margin-top: 8px;
+}
+
+.change-your-habits .card-wrapper {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    margin-top: 58px;
+}
+
+.change-your-habits .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 30px;
+}
+
+.change-your-habits .image-container img {
+    width: 180px;
+    height: 180px;
+    border-radius: 100%;
+}
+
+
+.change-your-habits .text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 6px;
+}
+
+.change-your-habits .title {
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 21.6px;
+    text-align: center;
+}
+
+.change-your-habits .description {
+    text-align: center;
+    color: rgba(255, 255, 255, 0.50);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+}
+
+/* BMI */
+.bmi {
+    background-color: #000;
+    padding-bottom: 100px;
+}
+
+.bmi h2 {
+    font-size: 48px;
+    font-weight: 900;
+    line-height: 57.60px;
+    color: white;
+    padding-left: 100px;
+}
+
+.bmi .description {
+    max-width: 730px;
+    color: rgba(255, 255, 255, 0.50);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.30px;
+    margin-top: 8px;
+    padding-left: 100px;
+}
+
+/* BMI calculataor */
+.bmi-calculator {
+    background: #222222;
+    padding: 100px 0;
+}
+
+.bmi-calculator-chart h4 {
+    color: white;
+    font-size: 28px;
+    font-weight: 900;
+    line-height: 33.60px;
+}
+
+.bmi-calculator-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.bmi-calculator-chart {
+    width: 310px;
+}
+
+.bmi-calculator-chart table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid rgba(255, 255, 255, 0.10);
+    margin-top: 67px;
+}
+
+.bmi-calculator-chart table th,
+td {
+    padding: 8px 12px;
+    text-align: left;
+    border: 1px solid rgba(255, 255, 255, 0.10);
+}
+
+.bmi-calculator-chart table thead th {
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    padding: 20px;
+}
+
+.bmi-calculator-chart table tbody td {
+    color: rgba(255, 255, 255, 0.50);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.4;
+    padding: 18px;
+}
+
+/* BMI calculator form */
+.bmi-calculator-form h4 {
+    color: white;
+    font-size: 28px;
+    font-weight: 900;
+    line-height: 33.60px;
+}
+
+.bmi-calculator-form .text {
+    margin-top: 8px;
+    max-width: 577px;
+}
+
+.bmi-calculator-form form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+    margin-top: 34px;
+}
+
+.bmi-calculator-form form input,
+.bmi-calculator-form form select {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 20px;
+    background: rgba(255, 255, 255, 0.10);
+    border-radius: 8px;
+    outline: none;
+    border: none;
+    width: 100%;
+    font-size: 16px;
+    font-weight: 400;
+    color: #fff;
+    font-family: Inter;
+}
+
+.bmi-calculator-form form select option {
+    background: rgba(0, 0, 0, 0.8);
+    color: #fff;
+}
+
+.bmi-calculator-form form .activity {
+    grid-column: 1 / 3;
+}
+
+.bmi-calculator-form form button {
+    padding: 16px 40px;
+    border-radius: 42px;
+    border: none;
+    outline: none;
+    background: #E6533C;
+    color: white;
+    font-size: 18px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    line-height: 22px;
+    margin-top: 22px;
+}
+
+/* Meet our team */
+
+.meet-our-team {
+    background: #000000;
+    padding: 100px 0;
+}
+
+.meet-our-team h2 {
+    color: white;
+    font-size: 48px;
+    font-weight: 900;
+    line-height: 57.60px;
+    text-align: center;
+}
+
+.meet-our-team p.description {
+    width: 671px;
+    margin: auto;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.50);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.30px;
+    margin-top: 8px;
+}
+
+.meet-our-team .team-members {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-top: 20px;
+    padding: 20px;
+    background: #222222;
+    border-radius: 18px;
+}
+
+.meet-our-team .team-members .member {
+    position: relative;
+}
+
+.meet-our-team .team-members .member img {
+    height: 272px;
+    width: 100%;
+    border-radius: 18px;
+    object-fit: cover;
+}
+
+.meet-our-team .team-members .member .text-container {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    position: absolute;
+    left: 16px;
+    bottom: 16px;
+}
+
+.meet-our-team .team-members .member .text-container .name {
+    color: white;
+    font-size: 20px;
+    font-weight: 900;
+    line-height: 24px;
+}
+
+.meet-our-team .team-members .member .text-container .role {
+    color: rgba(255, 255, 255, 0.50);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16.80px;
+}
+
+/* Footer */
+footer {
+    background: #191919;
+    padding-top: 66px;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 80px;
+}
+
+.footer .logo {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer .logo .title {
+    color: #E6533C;
+    font-size: 36px;
+    font-style: italic;
+    font-weight: 800;
+    line-height: 43.2px;
+    word-wrap: break-word;
+}
+
+.footer .logo p {
+    max-width: 400px;
+    color: rgba(255, 255, 255, 0.50);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    margin-top: 20px;
+}
+
+.footer .get-started h5 {
+    color: white;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 38.40px;
+}
+
+.footer .get-started .get-started-wrapper {
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    margin-top: 40px;
+}
+
+.footer .get-started .get-started-wrapper p {
+    color: rgba(255, 255, 255, 0.50);
+    font-size: 23px;
+    font-weight: 400;
+    line-height: 27.60px;
+}
+
+footer .divider {
+    width: 100%;
+    height: 2px;
+    background: rgba(255, 255, 255, 0.10);
+}
+
+footer .copyright {
+    color: rgba(255, 255, 255, 0.50);
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    padding: 35px 0;
+    text-align: center;
+}
+
+@media screen and (max-width: 767px) {
+    .container{
+        padding: 0 20px;
+    }
+    .banner .nav-container .nav{
+        display: none;
+    }
+    .banner-content {
+        flex-direction: column;
+    }
+    .banner-left .banner-title {
+        font-size: 36px;
+        line-height: 36.6px;
+    }
+}
